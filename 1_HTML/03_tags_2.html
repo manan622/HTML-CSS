@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<!-- Note - In order to quickly create a tag for ex - if we want to crete a h1 tag then write h1 and hit tab.  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Note - if you want to add multiple cursors use Ctrl+alt+up/down it'll help in editing multiple lines. -->
+
+    <!-- Note - more than one h1 tag can be a sign of poor content structure , Multiple h1 tags can de-emphasize 
+    keyword associations with the page. Having too many h1s could indicate trying to fit too many ideas onto 
+    one page. -->
+
+    <h1>This is my first heading.</h1> <!-- Most important headings are to be written here. -->
+    <h2>This is my second heading.</h2>
+    <h3>This is my third heading.</h3>
+    <h4>This is my fourth heading.</h4>
+    <h5>This is my fifth heading.</h5>
+    <h6>This is my sixth heading.</h6> <!-- upto h6 are supported in HTML h7 and h8 will act as paragraph tag. -->
+    <h7>This is my seventh heading.</h7> 
+    <h8>This is my eight heading.</h8> 
+
+    <p>This is my first paragraph.</p>
+
+    <!-- anchor tag is used to make Hyperlink i.e. we can use this tag to redirect to another site / get someone's 
+    email or phone number. -->
+
+    <a href="https://www.google.com">click here</a> 
+    <br/> 
+    <a href="mailto:arnavpratapsingh2006@gmail.com">Email</a>
+    <br/>
+    <a href="tel:+917895725005">Phone</a>
+
+    <!-- Lists are of three types - 1) unordered list , 2) ordered list , 3) description list. -->
+    <!-- li tag is used for list items and li stands for list items. -->
+
+    <!-- short way to create lists is ul>li*3 this will make 3 list items in an unordered list. -->
+
+    <!-- ul = unordered list. -->
+
+    <ul>
+        <li>Aston Martin</li>
+        <li>Mc Laren</li>
+        <li>Porsche</li>
+    </ul>
+
+    <!-- ol = ordered list. -->
+
+    <ol> 
+        <li>DBX 707</li>
+        <li>Senna</li>
+        <li>911</li>
+    </ol>
+
+    <!-- dl = description list. -->
+    <!-- dt = description term. -->
+    <!-- dd = description details. -->
+
+    <dl> 
+        <dt>Quantum Computing</dt> 
+            <dd>
+                Quantum computing leverages the principles of quantum mechanics to process information in ways that 
+                classical computers cannot, promising unprecedented speed and efficiency for certain complex tasks. 
+                This emerging technology has the potential to revolutionize fields like cryptography, materials 
+                science, and artificial intelligence.
+            </dd>
+    </dl>
+
+    <table>
+
+        <!-- tr = tale row. -->
+        <!-- td = table data. -->
+        <!-- shortcut for table is table>(tr>td*3) i.e. 3 table data in table row tag in table tag. -->
+        <!-- but if you want what we've done below i.e. create 3 tr then table>(tr>td*3)*3-->
+
+        <tr> <!-- row 1. -->
+            <td>Sr. no.</td> 
+            <td>Name</td>
+            <td>email</td>
+        </tr>
+
+        <tr> <!-- row 2. -->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+
+        <tr> <!-- row 3. -->
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+
+    </table>
+
+    <!-- There are two attribut in image tag i.e. src(source) & alt(alternative text) alt is used to give description
+    of the image in case image is not working. -->
+
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fltamerica.org%2Fmy-favorite-photographs-of-robert-oppenheimer%2F&psig=AOvVaw1gytgrzCq4c6DZzRSyeceX&ust=1723487186028000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKCEmqDI7YcDFQAAAAAdAAAAABAE" 
+    alt="Robert Oppenheimer">
+
+    <!-- Note - style is an attribute. -->
+
+    <h3 style ="background-color: aqua;">heading 1</h3> <!-- This will convert bg color to aqua -->
+    <h3 style ="color : brown;">heading 2</h3> <!-- This will convert text color to brown -->
+    
+    <!-- Note - we don't use bold tag in HTML because styling is done by CSS . Strong tag is used to emphasize for 
+    ex - when we use text to speech then it will emphasise on ipsum. -->
+
+    <p><b>Lorem</b> <strong>ipsum</strong> <i>dolor</i> <u>sit </u> <s>amet</s>, consectetur adipisicing elit. Enim harum cum dolorem aliquam mollitia distinctio unde atque eaque vero est quam odio sequi, sunt temporibus facere. Nulla, odio quos vero repellat cupiditate aliquam non veritatis inventore ducimus voluptatem velit quod in ab dolore, odit enim minus quo recusandae quis molestiae deleniti eligendi suscipit tempora cum! Excepturi, ab debitis mollitia illum tenetur, ex libero veritatis accusamus, maxime laborum at voluptatum dignissimos ratione. Fugiat ducimus, odit voluptate, adipisci odio molestias explicabo, modi assumenda tenetur quisquam rem? Pariatur ipsam est voluptatibus neque at atque rerum ipsum amet? Neque, nemo? Error sunt officiis eum!</p>
+
+    <!-- sup = superscript. -->
+
+    <p>
+        2<sup>5</sup> <!-- To print 2^5. -->
+    </p>
+
+    <!-- sub = subscript. -->
+
+    <p>
+        O<sub>2</sub> <!-- To print O2(oxygen). -->
+    </p>
+
+    <p>My name is Arnav pratap singh. <br/> I live in Haridwar.</p>
+
+    <pre>
+        My name is Arnav pratap singh. <!-- Pre tag is used to print preformatted text. -->
+        I live in Haridwar.
+    </pre>
+
+    <!-- code tag is used to print code snippet on a website. -->
+
+    <p>
+       In c++ <code>push_back()</code> is used to push elements at the last index of an array or string.
+    </p>
+
+    <!-- Div is a non-sementic tag . It is used to create section/divisions in a webpage. -->
+    <!-- .container>section>ul>li*3 -->
+    <div class="container">
+        <section>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <footer></footer>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <header></header>
+        <main></main>
+        <footer></footer>
+    </div>
+
+    <!-- Block and Inline elements. -->
+
+    <!-- In HTML, elements are categorized into two main types: block-level elements and inline elements. 
+    Understanding the differences between these two types is crucial for controlling the layout and presentation of 
+    a webpage. -->
+
+    <!-- Block elements - Block-level elements always start on a new line, taking up the full width available by 
+    default, stretching out to the left and right as far as it can . You can specify the width and height of 
+    block-level elements. Ex - div , h1 , para , ul , ol , li , header , footer , section , article , form , etc. -->
+
+    <!-- Inline elements - Inline elements do not start on a new line; they appear on the same line as adjacent 
+    content, unless wrapped by a block-level element . Inline elements ignore the width and height properties; they
+    only take up as much width as necessary. Ex - span , anchor , img , strong , em , b , i , break , code , etc. -->
+
+    <div style="background-color: aqua;">This is my first div.</div>
+    <div style="background-color: aqua;">This is my first div.</div>
+
+    <span style="background-color: yellow;">This is my first span tag.</span>
+    <span style="background-color: yellow;">This is my first span tag.</span>
+
+    <!-- You can convert block elements into inline by writing display : inline and vice versa is also true. -->
+
+    <p style="background-color: brown;display: inline;">Conversion of para tag(block element) to inline element.</p>
+    <span style="background-color: aqua;display: block;">Conversion of span tag(inline element) to block element.</span>
+    <span>verify whether the above span is block or not if this line prints in a new one then then the above one is block else inline.</span>
+
+    <ul>
+        <li>
+            <p><a href="https://www.google.com">Google</a></p>
+        </li>
+    </ul>
+
+    <!-- making a bookmark to direct to other sections of a webpage. -->
+    <p id="Archery">
+        In my 7th grade i started to practise archery and in the span of 3 years i had played about 7-8 nationals and 
+        everything was going good until i recahed high school where my archery phase ended too bad so sad. 
+    </p>
+    <a href="Archery">My involvement in sports.</a>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </nav>
+
+
+</body>
+</html> 

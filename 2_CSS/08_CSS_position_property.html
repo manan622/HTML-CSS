@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            background-color: cornflowerblue;
+            border: solid green 3px;
+            height: 1000px;
+            /* width: 695px; */
+        }
+
+        img{
+            margin: 10px;
+        }
+
+        .photo1{
+            /* The image will be sticked at a particular position just like fixed but the only difference is 
+            that sticky is just for it's given container while in fixed it's fixed for the whole window. */
+            position: sticky;
+            top: 100px;
+        }
+
+        .photo2{
+            /* when we set position absolute then gap between the images doesn't maintain before and after 
+            shifting the gap is taken over by the next set of images. */
+            position: absolute;
+            top: 120px;
+        }
+
+        .photo5{
+            /* If we set the image to relative/absolute positioning then we can change the position of image. */
+            /* when we set position relative then gap between the images maintains before and after shifting. */
+            position: relative;
+            /* Even on scrolling the image will be fixed for the whole window. */
+            position: fixed;
+            /* top: 120px; */
+        }
+
+        .container{
+            position: relative;
+            /* top: 20px; */
+        }
+
+        .box{
+            border: solid black 3px;
+            height: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- Types of position property values -  -->
+
+    <!-- 1. Static(By default applied i.e. we can't specify changes we want)  -->
+    <!-- 2. Relative  -->
+    <!-- 3. Absolute  -->
+    <!-- 4. Fixed  -->
+    <!-- 5. Sticky -->
+
+    <div class="container">
+
+        <!-- Image tag is an inline block element. -->
+
+        <img src="9_GTA.jpg" alt="GTA V : " width="200px" height="100px" class="photo1">
+        <img src="10_Wolvesfc.jpg" alt="Wolves fc : " width="200px" height="100px" class="photo2">
+        <img src="11_DW.jpg" alt="Darkwood : " width="100px" class="photo3">
+        <img src="12_RDR2.jpg" alt="Red Dead Redemption 2 : " width="200px" height="100px" class="photo4">
+        <img src="13_MC.png" alt="Minecraft : " width="100px" class="photo5">
+
+    </div>
+
+    <div class="box">
+        Hello
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External CSS. -->
+
+    <link rel="stylesheet" href="3_external.css">
+
+    <!-- Internal CSS. -->
+
+    <style>
+
+        /* here h1 is a selector / target element , color is a property & blue is value. */
+
+        h1{
+            color: blue
+        }
+
+        p{ 
+            /* This will only effect the paragraph where the bg color is default because priority of inline is higher
+            than internal. */
+            background-color: blueviolet;
+        }
+
+        /* But if we wish to apply internal CSS even if we've alredy written inline CSS then we can use !important 
+        attribute. */
+
+        /* p{
+            background-color: yellow !important;
+        } */
+
+        /* If you want your code to follow external css then and not internal then just slid your link right here 
+        because priority increases as we get near to the code written. */
+
+    </style>
+</head>
+<body>
+    
+    <h1>Welcome</h1>
+    
+    <!-- Inline CSS. -->
+
+    <p style="color: yellow;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic error aperiam maxime quidem quibusdam, temporibus cum sapiente ipsa enim tenetur.</p>
+
+    <p style="background-color: blueviolet;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, quibusdam exercitationem, cupiditate blanditiis porro expedita, quidem ipsam nesciunt voluptatem molestiae sequi quaerat minima. Quaerat, numquam officiis temporibus quae vero aperiam.</p>
+
+    <p style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quae, necessitatibus qui, dignissimos atque itaque voluptatum quaerat accusamus ad distinctio nihil. Animi, et velit perspiciatis tempore nulla iste minus, officia cum odio, provident eligendi pariatur distinctio perferendis nam quasi assumenda! Ipsam adipisci iusto ut quos ipsa impedit exercitationem eligendi deserunt?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, inventore.</p>
+
+    <footer>I am footer.</footer>
+
+</body>
+</html>

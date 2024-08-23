@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            /* With this dimension of border remains same but content shrinks if we style anything. */
+            box-sizing: border-box;
+        }
+
+        .firstdiv{
+
+            width: 300px;
+            height: 300px;
+            border: solid black 2px;
+            padding: 100px;
+        }
+
+        span{
+            width: 250px;
+            height: 39px;
+            padding: 10px;
+            margin: 30px;
+            border: solid black 2px;
+            /* display: block; */
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- Block element -  -->
+
+    <!-- 1. Starts in new line. -->
+    <!-- 2. width from extreme left to extreme right. -->
+    <!-- 3. respects customisation of width and height as well as customisation of margin and padding. -->
+
+    <div class="firstdiv">
+        Welcome
+    </div>
+
+    <!-- Inline element -  -->
+
+    <!-- 1. Tries to starts in the same line until and unless all the width is used up. -->
+    <!-- 2. width is same as content. -->
+    <!-- 3. Customisation of width and height is not possible until and unless we convert it in a block element. -->
+
+    <span>This is Arnav pratap singh</span>
+
+    <span>I am in College</span>
+
+    <!-- Inline-Block element - Acts as inline element but we can customise height and width. -->
+
+    <!-- This will be in the same line as the other 2 span as inline-block acts as inline.  -->
+    <span>Testing inline-block</span>
+
+</body>
+</html>
