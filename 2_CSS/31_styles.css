@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+#Brand_name{
+    padding-left: 20px;
+    font-size: 60px;
+    font-family: kalam;
+}
+
+#tags{
+    /* background-image: ; */
+    margin-top: 23px;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+a{
+    /* to remove the underline of home , about etc. */
+    text-decoration: none;
+    /* to change the color of about , home , etc. */
+    color: black;
+    font-size: 30px;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: none;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    /* background-color: cornflowerblue; We are using gradient background. */
+    /* To add background image we use this -  */
+    background-image: url(33_header_bg.jpg);
+    border: solid black 2px;
+}
+
+.content_box{
+    /* border: solid black 3px; */
+    /* Box shadow looks cool. */
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    box-shadow: 3px 3px 30px 4px black;
+    width: 75%;
+    /* This will align the container in center. */
+    margin: auto;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    /* it is used to blur the background. */
+    /* backdrop-filter: blur(90px); */
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+    padding-right: 24px;
+}
+
+h1{
+    font-weight: 100;
+    margin-top: 20px;
+    font-family: Bebas Neue;
+}
+
+p{
+    padding-left: 18px;
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+#img1{
+    height: 110px;
+    width: 200px;
+    margin-top: 43px;
+    border-radius: 8px;
+}
+
+#img2{
+    height: 110px;
+    width: 200px;
+    margin-top: 55px;
+    border-radius: 8px;
+}
+
+#img3{
+    height: 110px;
+    width: 200px;
+    margin-top: 53px;
+    border-radius: 8px;
+}
+
+.footer_container{
+    background: linear-gradient(to right, rgb(34, 193, 195), rgb(253, 187, 45));
+    padding-right: 20px;
+    color: black;
+    display: flex;
+    justify-content: end;
+}
+
+.right_box img{
+    transition: all 0.4s linear 0s;
+}
+
+.right_box img:hover{
+    transform: scale(1.1);
+
+}
+
+/* Making text and grey filter on each image. */
+
+.right_box{
+    position: relative;
+    /* hide the overflow. */
+    /* overflow: hidden; */
+}
+
+.right_box .overlay{
+    position: absolute;
+    /* this will align our span message at top-left corner. */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(116, 106, 106, 0.256);
+    /* this will centeralised the span message. */
+    display: flex;
+    align-items: center;
+} 

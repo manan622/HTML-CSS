@@ -1,0 +1,27 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 6s linear 1s;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    /* transform: rotate(360deg); */
+    /*transform: scale(0.5); this'll convert the box size to 0.5x. */
+    /* transform: skew(-45deg); this'll tilt the box */
+    transform: translate(250px , -250px);
+}
+pre{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}

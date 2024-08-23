@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* We can also use variables in CSS. */
+        /* variables defined under the braces like defined in .box{} can be used for that element only. */
+        /* To make variables which can be used thoroughout the code you can define them under the root. */
+        :root{
+            --color:grey;
+        }
+        h2{
+            /* we can use all the attributes i.e.(x-offset , y-offset , blur radius , color) except spread radius in 
+            text shadow . We can also use multiple shadows. */
+            text-shadow: 3px 2px 1px white;
+        }
+        .container{
+            background-color: beige;
+            height: 700px;
+            border: solid black 2px;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box{
+            /* making variables. */
+            --primary-color: cornflowerblue;
+            --custom-height: 280px;
+            --custom-width: 280px;
+            /* using variables. */
+            background-color: var(--primary-color);
+            height: var(--custom-height);
+            width: var(--custom-width);
+            margin: 25px;
+            padding: 5px;
+        }
+        #b1{
+            /* box-shadow: x-offset , y-offset , color ; */
+            box-shadow: 16px 10px grey;
+        }
+        #b2{
+            /* box-shadow: x-offset , y-offset , blur radius , color; */
+            box-shadow: 16px 10px 4px var(--color);
+            /* just for example we used --color insted of writing grey. */
+        }
+        #b3{
+            /* box-shadow: x-offset , y-offset , blur radius , spread radius , color; */
+            box-shadow: 16px 10px 4px 4px grey;
+        }
+        #b4{
+            /* box-shadow: inset , x-offset , y-offset , color; */
+            box-shadow: inset 10px 4px grey;
+            /* Inset shadow looks kinda bad but maybe you can beautify it by shifting the padding. */
+        }
+        #b5{
+            /* box-shadow: shadow 1(details) , shadow 2(details); */
+            box-shadow: 15px 9px green , 18px 12px yellow;
+        }
+        img{
+            height: 90px;
+            width: 180px;
+            border: solid black 2px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box" id="b1">
+            <h2>Welcome</h2>
+            <img src="25_McLaren_senna.jpg" alt="McLaren Senna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis reiciendis magni, amet impedit error facilis in, modi eaque quo illo placeat, quidem consequuntur odio?</p>
+        </div>
+
+        <div class="box" id="b2">
+            <h2>Welcome</h2>
+            <img src="25_McLaren_senna.jpg" alt="McLaren Senna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis reiciendis magni, amet impedit error facilis in, modi eaque quo illo placeat, quidem consequuntur odio?</p>
+        </div>
+
+        <div class="box" id="b3">
+            <h2>Welcome</h2>
+            <img src="25_McLaren_senna.jpg" alt="McLaren Senna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis reiciendis magni, amet impedit error facilis in, modi eaque quo illo placeat, quidem consequuntur odio?</p>
+        </div>
+
+        <div class="box" id="b4">
+            <h2>Welcome</h2>
+            <img src="25_McLaren_senna.jpg" alt="McLaren Senna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis reiciendis magni, amet impedit error facilis in, modi eaque quo illo placeat, quidem consequuntur odio?</p>
+        </div>
+
+        <div class="box" id="b5">
+            <h2>Welcome</h2>
+            <img src="25_McLaren_senna.jpg" alt="McLaren Senna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis reiciendis magni, amet impedit error facilis in, modi eaque quo illo placeat, quidem consequuntur odio?</p>
+        </div>
+        
+    </div>
+
+</body>
+</html>

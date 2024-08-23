@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    /* Selector is a way with which we can target one or multiple html element and can apply desired css. */
+
+   /* Types of selectors - 
+
+    1. element selector 
+    2. id selector 
+    3. class selector 
+    4. group selector */
+
+    p{
+        /* element selector. */
+        color: green;
+    }        
+
+    #art1{
+        /* id selector. */
+        color: aqua;
+    }
+
+    .paraclass{
+        /* class selector. */
+        background-color: yellow;
+        
+        /* the latest styling will be applied. */
+        background-color: bisque;
+    }
+
+    p,article{
+        /* group selector. */
+        width: 1000px;
+    }
+
+    p.paraclass{ 
+        /* this styling will only be applied to class(paraclass) of paragraphs i.e. won't be applied to article. */
+        text-align: center;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Welcome</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatem eligendi vero neque voluptas quasi quo et nulla exercitationem? Eligendi.</p>
+    
+    <p class="paraclass">My name is Arnav</p>
+
+    <p class="paraclass">I am a student</p>
+
+    <article id="art1" class="paraclass">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, ipsa magnam dicta minima placeat ipsam quidem velit amet voluptatibus ratione modi vel corrupti eos quos animi at fugiat aliquid quo!</article>
+
+
+</body>
+</html>

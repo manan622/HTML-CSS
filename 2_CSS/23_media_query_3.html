@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            height: 100px;
+            width: 200px;
+        }
+        .container{
+            width: 50%;
+            border: solid black 2px;
+            background-color: cornflowerblue;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+        }
+        #box_left{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border: solid black 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        #box_right{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border: solid black 2px;
+        }
+        p{
+            border: solid black 1px;
+        }
+        @media (max-width:500px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div id="box_left">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div id="box_right">
+            <img src="12_RDR2.jpg" alt="Red Dead Redemption">
+        </div>
+    </div>
+
+</body>
+</html>

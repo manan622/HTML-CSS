@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- To make the same website available for different display size. -->
+
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            border: solid black 3px;
+        }
+        /* min-width: 500px
+        max-width: 500px
+        (min-width: 200px) and (max-width: 500px) */
+        @media (max-width: 500px){
+            .box{
+                background-color: yellow;   
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+        Hello mate.
+    </div>
+
+</body>
+</html>

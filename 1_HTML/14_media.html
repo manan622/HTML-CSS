@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- The loading="lazy" attribute in the <img> tag in HTML is used to enable "lazy loading" of images. This is a
+    performance optimization technique that delays the loading of images until they are about to enter the viewport,
+    or become visible to the user. Lazy loading is particularly useful for improving page load times and reducing 
+    bandwidth usage, especially on pages with many images or long scrolling content. -->
+
+    <p>Minecraft Logo : </p>
+
+    <img src="17_imagefile.png" alt="Minecraft Logo" height="150px" width="200px" loading="lazy">
+
+    <p>My favourite song : </p>
+
+    <!-- without using control attribute audio file won't be visible on webpage. -->
+
+    <audio src="15_audiofile.mp3" controls></audio> 
+
+    <!-- alternate way - 
+
+    <audio controls>
+        <source src="15_audiofile.mp3" type="audio/mp3"> 
+    </audio> -->
+
+    <br/>
+    <br/>
+
+    <!-- Bookmark. -->
+
+    <!-- You always access an id and classes using a # and . respectively that's why we used # here. -->
+
+    <a href="#Music vid">Cupid By Fifty Fifty</a>
+
+    <br/>
+    <br/>
+
+    <video src="16_videofile.mp4" controls height="400px"></video>
+
+    <br/>
+    <br/>
+
+    <iframe src="12_form_5.html" height="500px" width="1000px"></iframe>
+
+    <br/>
+    <br/>
+
+    <!-- iframe tag is used to attach external docs or links to your webpage. -->
+
+    <!-- https://www.youtube.com/watch?v=Qc7_zRjH808- won't work we have to modify the link.  -->
+    <!-- https://www.youtube.com/embed/Qc7_zRjH808- this modified link will work. -->
+
+    <!-- section>table>(tr>td*3)*2 -->
+
+    <section id="Music vid">
+        <h2>Cupid By Fifty Fifty</h2>
+        <table>
+            <tr>
+                <td><iframe src="https://www.youtube.com/embed/Qc7_zRjH808" height="220px" width="400px"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/Qc7_zRjH808" height="220px" width="400px"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/Qc7_zRjH808" height="220px" width="400px"></iframe></td>
+            </tr>
+            <tr>
+                <td><iframe src="https://www.youtube.com/embed/Qc7_zRjH808" height="220px" width="400px"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/Qc7_zRjH808" height="220px" width="400px"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/Qc7_zRjH808" height="220px" width="400px"></iframe></td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        © 2024 Arnav . All rights reserved.
+    </footer>
+    
+</body>
+</html>

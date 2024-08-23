@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <!-- Moving from one state of styling to other is called transition. -->
+    <!-- different states maybe defined using pseudoclasses like hover or active. -->
+
+    <!-- transition - From one state to another.
+    animation - series of complex movements.It have multiple transition. -->
+
+    <style>
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: wheat;
+            border: solid black 2px;
+
+            /* This means that trsnsition will be applied on width only i.e. there will be smooth transition of
+            width but the color change will be sudden. */
+            /* transition-property: width; */ 
+
+            /* Transition will be applied on all i.e. color change will be smooth as well as width transition. */
+            /* transition-property: all;
+            transition-duration: 4s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in; */
+
+            /* shorthand notation. */
+            /* transition: property | duration | delay | timing-function; */
+            transition: all 3s 1s ease-in;
+            /* for multiple properties. */
+            /* for duration1 transition of prop1 will take place and for duration2 transition of prop2 will take place. */
+            /* transition: prop1 duration1 , prop2 duration2; */
+        }
+        .box:hover{
+            /* This will be applied when you hover on the box. */
+            width: 1260px;
+            height: 530px;
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

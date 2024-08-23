@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Flexbox is a very important topic. */ 
+
+        /* after going through the file play https://labs.codehelp.in/fruitbox-flex to revise. */
+ 
+        /* When flex direction is row(default) then justify content handles row while align items handle column and
+        when flex direction is column then justify content handles column while align items handles row. */   
+
+        .container{
+            background-color: beige;
+            border: solid black 5px;
+            height: 500px;
+            margin: 2px;
+            padding: 2px;
+            /* Flex direction is set to row by default. */  
+            display: flex; 
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* To check the application of wrapping you need to inspect the webpage and try to squeese the screen
+            with wrapping on the containers will stacked upon each other in order to avoid being squeesed and
+            with wrapping off the containers will just get squeesed. */
+            /* flex-wrap: wrap-reverse; */
+
+            /* In order to use both flex direction and flex wrapping we have shorthand notations which are - */
+
+            /* flex-flow: row wrap;
+            flex-flow: row-reverse nowrap;
+            flex-flow: column wrap;
+            flex-flow: column wrap-reverse;
+            flex-flow: row-reverse wrap-reverse; */
+
+            /* Justify-content - it aligns the element according to the command on main axis. */
+
+            /* If the flex direction is row then the main axis became horizontal if the flex direction is column
+            then the main axis became vertical. */
+             
+            /* justify-content: center; currently the main axis is default i.e. row. */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+
+            /* This property is applied on cross axis which is vertical by default. */
+            align-items: start;
+
+            /* This property aligns the whole content. */
+            align-content: start;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border: solid brown 2px;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box1{
+            background-color: cornflowerblue;
+            /* this will shift box1 at the 1st position i.e. in the end(as there are only 4 boxes). */
+            order: 0;
+            /* When you squuese the window thwn box 1 will shrink 4x compared to others. */
+            /* flex-shrink: 4; */
+            /* flex grow makes all the boxes take up all the space and the grow factor will determine how much times
+            it will retain its position compared to others. */
+            /* flex-grow: 5; */
+            /* short hand notation of using flex shrink , grow & basis simultaneously. */
+            /* flex: 5 5 30px; */
+            /* this will make the box align in center of the default axis i.e. vertical axis. */
+            align-self: center;
+        }
+
+        #box2{
+            background-color: yellow;
+            /* flex-grow: 1; */
+        }
+
+        #box3{
+            background-color: orange;
+            /* flex-grow: 1; */
+        }
+
+        #box4{
+            background-color: brown;
+            /* this will shift box4 in the beginning and therefore box 2 will naturally be at 2nd. */
+            order: -1;
+            /* flex-grow: 1; */
+            /* flex basis is used to set dimension of the box. */
+            /* flex-basis: 400px; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* Whenever we use external CSS file remember 2 things - 1. To make a CSS file , 2. to link that CSS file into main
+html file. */
+
+h1{
+    text-align: center;
+}
+p{
+    background-color: aquamarine;
+}
