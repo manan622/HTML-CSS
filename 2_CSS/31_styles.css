@@ -131,3 +131,7 @@ p{
     display: flex;
     align-items: center;
 } 
+.leftbox{
+    display: flex;
+    flex-grow: 1;
+}
